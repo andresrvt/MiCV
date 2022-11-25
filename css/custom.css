@@ -1,0 +1,22 @@
+body{
+    width: 100%;
+    height:auto;
+}
+
+li{
+    padding: 10px;
+}
+
+.espacio-superior{
+    margin-top: 2%;
+}
+
+.fondo-page1{
+    background-image: url("/img/img-fondo1.svg");
+    height: 100vh;
+}
+
+.fondo-page2{
+    background-image: url("/img/img-fondo2.svg");
+    height: auto;
+}

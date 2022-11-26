@@ -39,7 +39,7 @@ font-size: x-large;
     height: 8vh;
     width: 8w;
     border-radius: 50%;
-    background: conic-gradient(rgba(255, 255, 255, 0.973) 3.6deg, rgb(102, 28, 28) 0deg);
+    background: conic-gradient(rgba(25, 141, 161, 0.973) 3.6deg, rgb(21, 129, 133) 0deg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,13 +64,75 @@ font-size: x-large;
     color: black;
 }
 
-.progress-40 {
-    background-image: -webkit-linear-gradient(0deg, #f0f0f0 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), -webkit-linear-gradient(216deg, #38b16b 50%, #f0f0f0 50%, #f0f0f0);
-    background-image: linear-gradient(90deg, #f0f0f0 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(234deg, #38b16b 50%, #f0f0f0 50%, #f0f0f0);
-  }
-  .progress{
-    max-width:1000px;
-    margin: 40px auto;
-  }
-  
-  
+.progress_container{
+    max-width: 1140px;
+    width: calc(100%-2rem);
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+.progress{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.progress_item{
+    padding: 0.5rem;
+}
+.progress_tittle{
+    padding: 1rem 0;
+}
+.progress_bar{
+    position: relative;
+    width: 30rem;
+    height: 8px;
+    border-radius: 2rem;
+    background: rgb(255, 0, 0);
+}
+
+.bar{
+    border-radius: inherit;
+    background: linear-gradient(90deg, red, red, red);
+
+    transition: width 1.5s cubic-bezier(0.1,0.42,085,1);
+    width: 0;
+    height: 100%;
+    left: 0;
+}
+.bar::after{
+    content: attr(data-text);
+    position: absolute;
+    right: 0;
+    top: -3rem;
+    width: 4rem;
+    height: 2rem;
+    background: red;
+    text-align: center;
+    border-radius: 0.1rem;
+    animation: text 0.6s ease-in-out;
+    font-weight: bold;
+}
+
+.bar::before{
+    counter-reset: "";
+    position: absolute;
+    right: 1rem;
+    top: -1.2rem;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid red;
+    border-bottom: 10px solid transparent;
+}
+@keyframes text {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

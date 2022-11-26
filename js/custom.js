@@ -21,20 +21,25 @@ let progress = setInterval(()=>{
     progressStartValue++;
 
     progressValue.textContent = `${progressStartValue}%`
-    circularProgress.style = `background: conic-gradient(rgba(250, 2, 2, 0.973) ${progressStartValue*3.6}deg, white 0deg);`;
+    circularProgress.style = `background: conic-gradient(rgba(25, 141, 161, 0.973) ${progressStartValue*3.6}deg, white 0deg);`;
 
     if (progressStartValue == progressEndValue) {
         clearInterval(progress);
     }
 }, speed);
 
-$( document ).ready(function() {
-    $(".setsize").each(function() {
-        $(this).height($(this).width());
+window.onload = function (){
+    let bar = document.querySelector('.bar');
+    bar.forEach((progress) =>{
+        let value = progress.getAttribute('data-value');
+        progress.style = `width: ${value}%`;
+        let count = 0;
+        let progressAnimation = setInterval(()=>{
+            count++;
+            progress.getAttribute('data-text',`${count}%`);
+            if(count<=value){
+                clearInterval(progressAnimation);
+            }
+        },15);
     });
-});
-$(window).on('resize', function(){
-    $(".setsize").each(function() {
-        $(this).height($(this).width());
-    });
-});
+};

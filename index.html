@@ -8,13 +8,15 @@
         <link rel="stylesheet" href="css/custom.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"/>
         <script defer src="js/bootstrap.bundle.js"></script>
+        <script defer src="js/custom.js"></script>
+        <script defer src="https://code.jquery.com/jquery-3.5.1.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     </head>
 <body>
     
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
-          <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-sm navbar-light d-inline">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo MiCV" width="40px">MiCV</a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -22,130 +24,160 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+                        <a class="nav-link" href="#">Estudios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Action 1</a>
-                            <a class="dropdown-item" href="#">Action 2</a>
-                        </div>
+                        <a class="nav-link" href="#">Skills</a>
                     </li>
                 </ul>
-                <form class="d-flex my-2 my-lg-0">
-                    <input class="form-control me-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                <div class="row-10 espacio-superior d-flex justify-content-lg-end justify-content-sm-start">
+                    <a type="button" class="btn color-primario btn-lg" href="https://github.com/andresrvt?tab=repositories"><i class="bi bi-github">Github</i></a>
+                    <a type="button" class="btn color-primario btn-lg" href="https://www.instagram.com/andresrvt/"><i class="bi bi-instagram">Instagram</i></a>
+                    <a type="button" class="btn color-primario btn-lg" href="https://www.linkedin.com/in/andres-repiso-2349bb222/"><i class="bi bi-linkedin">Linkedin</i></a>
+                </div>        
             </div>
-      </div>
+        </div>
     </nav>
 
-    <div class="container-fluid">
-        <div class="row fondo-page1">
-            <div class="col">
-                <div class="row">
-                    <div class="col col-3">
-                        <img src="img/mifoto.png" class="img-fluid" alt="Mi foto de perfil">
-                    </div>
-                    <div class="col-9 align-self-center">
-                        
-                      <div class="row">
-                            <h2>Me llamo Andrés Repiso Vidal de Torres</h2>
-                      </div>
-                        <div class="row">
-                            <h6>Soy Desarrollador de Aplicaciones Web  </h6>
-                       </div>
-                       <div class="row">
-                        <img class="img-fluid" src="img/img-separador.svg" alt="Barra separadora">
-                       </div>
-                       <div class="row-10 espacio-superior d-flex justify-content-center">
-                        <a type="button" class="btn color-primario btn-lg" href="https://github.com/andresrvt?tab=repositories"><i class="bi bi-github">Github</i></a>
-                        <a type="button" class="btn color-primario btn-lg" href="https://www.instagram.com/andresrvt/"><i class="bi bi-instagram">Instagram</i></a>
-                        <a type="button" class="btn color-primario btn-lg" href="https://www.linkedin.com/in/andres-repiso-2349bb222/"><i class="bi bi-linkedin">Linkedin</i></a>
-                       </div>                
-                    </div>
-                </div>
-            </div>
-        </div>
-     </div>
-
-    <!--SEGUNDA PARTE-->
-    <div class="container-fluid m-1">
-    <div class="row fondo-page2">
-        <div class="row justify-content-center">
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-img-top">
-                        <div class="row">
-                            <div class="row col-4 p-2">
-                                <img src="img/upo.png" class="img-fluid" alt="Imagen de Formación">
-                            </div>
-                            <div class="row p-2 col-4">
-                                <img src="img/UNED.jpg" class="img-fluid" alt="Imagen de Formación">
-                            </div>
-                            <div class="row p-2 col-4">
-                                <img src="img/ilerna1.png" class="img-fluid" alt="Imagen de Formación">
-                            </div>
+    <div class="fondo1">
+        <div class="container container-fluid mt-1">
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <div class="col col-lg-3 col-sm-12 mt-5 text-center">
+                            <img src="img/mifoto.png" class="img-fluid" alt="Mi foto de perfil">
                         </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="row col-4 p-2">
-                                    <p>Universidad Pablo de Olavide</p>
-                                </div>
-                                <div class="row col-4 p-2">
-                                    <p>Universidad UNED</p>
-                                </div>
-                                <div class="row col-4 p-2">
-                                    <p>DAW Ilerna </p>
-                                </div>
+                        <div class="col-lg-9 col-sm-12 align-self-center">
+                            
+                        <div class="row ">
+                                <h2>Curriculum Web de Andrés Repiso Vidal de Torres</h2>
+                        </div>
+                            <div class="row mt-3">
+                                <h4>Desarrollador de Aplicaciones Web </h4>
+                        </div>
+                        <div class="row">
+                            <img class="img-fluid" src="img/img-separador.svg" alt="Barra separadora">
+                        </div>
+                        <div class="row-1 col-12 espacio-superior d-flex">
+                                <span>Bienvenidos, mi nombre es Andrés, tengo 28 años y soy de Sevilla, España. Soy desarrollador de aplicaciones web y aún estoy formándome en el Centro de Formación Profesional Ilerna Sevilla.</span>
+                        </div>
+                        <div class="row-1 col-12 espacio-superior d-flex">
+                                <span>Durante los últimos años de mi vida, he estado desempeñando labores de administración en distintos negocios locales hasta que descubrí que mi verdadera pasión es el desarrollo web.</span>
                             </div>
+                            <div class="row-1 col-12 espacio-superior d-flex">
+                                <span>En esta página web descubrirás un poco acerca de mí y de mi experiencia tanto en el mundo de la informática como mis experiencias personales.</span>
+                            </div>                      
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="conrainer">
+        <div class="container-fluid m-1">
+            <div class="card">
+                <div class="row justify-content-center fondo2">
+                    <div class="col-sm-4 mt-5">
+                            <div class="card-img-top mt-5">
+                                <div class="row gap-3">
+                                    <div class="text-center mt-5">
+                                        <h1>Estudios Realizados</h1>
+                                    </div>
+                                        <div class="row col-4 p-2 mt-5" id="img_container" value="Rotate" onclick="girarImagen('img_container')">
+                                        <img src="img/upo.png" class="img-fluid" id="image" alt="Imagen upo">
+                                        <div class="card-body">
+                                            <div class="row p-2 text-center">
+                                                <p>Universidad Pablo de Olavide</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row p-2 col-4 mt-5">
+                                        <img src="img/UNED.jpg" class="img-fluid" alt="Imagen uned">
+                                        <div class="card-body">
+                                            <div class="row p-2 text-center">
+                                                <p>Universidad UNED</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row p-2 col-4 mt-5">
+                                        <img src="img/ilerna1.png" class="img-fluid" alt="Imagen ilerna">
+                                        <div class="card-body">
+                                            <div class="row p-2 text-center">
+                                                <p>Ilerna Sevilla</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         <div class="row justify-content-center">
-            <div class="col-sm-6 p-1">
+            <div class="col-sm-5 p-1">
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
                             <div class="row">
-                                <img src="img/img-skills.svg"  class="img-fluid" alt="Imagen de Skills">
+                                <div class="container">
+                                    <div class="row  container-fluid">
+                                    <img src="img/img-skills.svg"  class="img-fluid progress-value circular-progress p-5" alt="Imagen de Skills">
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="col-3 text-center">
-                                <img src="images/icono-tail.svg"  class="img-fluid" alt="Icono de Tailwindcss">
-                                <h6>TailWindCSS</h6>
+                            <div class="row mt-5">
+                                <div class="col-3 text-center">
+                                    <img src="img/java.png"  class="img-fluid" alt="Icono de java">
+                                    <h6>Java</h6>
+
+                                </div>
+                                <div class="col-3 text-center">
+                                    <img src="img/php.jpg" class="img-fluid" alt="Icono de php">
+                                    <h6>PHP</h6>
+                                    <div class="container">
+                                        <div class="row circular-progress container-fluid">
+                                            <span class="progress-value">91%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 text-center">
+                                    <img src="img/mysql.png" class="img-fluid" alt="Icono de mysql">
+                                    <h6>MySQL</h6>
+                                    <div class="row circular-progress container-fluid">
+                                        <span class="progress-value">91%</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-3 text-center">
+                                    <img src="img/docker.png" class="img-fluid" alt="Icono de docker">
+                                    <h6>Docker</h6>
+                                                                        <div class="circular-progress container-fluid">
+                                        <span class="progress-value">91%</span>
+                                </div>
+                                </div>          
                             </div>
-                            <div class="col-3 text-center">
-                                <img src="images/icono-material.svg" class="img-fluid" alt="Icono de Tailwindcss">
-                                <h6>MaterialUI</h6>
                             </div>
-                            <div class="col-3 text-center">
-                                <img src="images/icono-bulma.svg" class="img-fluid" alt="Icono de Tailwindcss">
-                                <h6>BulmaCSS</h6>
-                            </div>
-                            <div class="col-3 text-center">
-                                <img src="img/icono-css.svg" class="img-fluid" alt="Icono de Tailwindcss">
-                                <h6>CSS3 Vanilla</h6>
-                            </div>          
-                        </div>
-    
-                        <div class="row">
-                            <div class="col-4 text-center">
-                                <img src="images/icono-boot.svg" class="img-fluid" alt="Icono de Tailwindcss">
-                                <h6>Bootstrap</h6>
-                            </div>
-                            <div class="col-4 text-center">
-                                <img src="images/icono-foundation.svg"  class="img-fluid" alt="Icono de Tailwindcss">
-                                <h6>Foundation</h6>
-                            </div>
-                            <div class="col-4 text-center">
-                                <img src="images/icono-sass.svg" class="img-fluid" alt="Icono de Tailwindcss">
-                                <h6>SaSS</h6>
+        
+                            <div class="row mt-5">
+                                <div class="col-3 text-center">
+                                    <img src="img/html.jpg" class="img-fluid" alt="Icono de html">
+                                    <h6>HTML</h6>
+                                </div>
+                                <div class="col-3 text-center">
+                                    <img src="img/css.png"  class="img-fluid" alt="Icono de css">
+                                    <h6>CSS</h6>
+                                </div>
+                                <div class="col-3 text-center">
+                                    <img src="img/js.png"  class="img-fluid" alt="Icono de js">
+                                    <h6>JavaScript</h6>
+                                </div>
+                                <div class="col-3 text-center">
+                                    <img src="img/b5.png" class="img-fluid" alt="Icono de bootstrap">
+                                    <h6>Bootstrap 5</h6>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -153,5 +185,7 @@
             </div>
         </div>
     </div>
+</div>
+        
 </body>
 </html>

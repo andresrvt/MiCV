@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "fuente basckerville";
+    src: url("/MiCV/fonts/LibreBaskerville-Bold.ttf");
+}
+
 body{
     width: 100%;
     height:auto;
@@ -11,12 +16,61 @@ li{
     margin-top: 2%;
 }
 
-.fondo-page1{
-    background-image: url("/img/img-fondo1.svg");
+.fondo1{
+    background-image: url("/MiCV/img/fondofi3.png");
     height: 100vh;
 }
 
-.fondo-page2{
-    background-image: url("/img/img-fondo2.svg");
-    height: auto;
+.fondo2{
+    background-image: url("/MiCV/img/fondoAulas.png");
+    height: 100vh;
 }
+
+span, h1, h2, h3, h4, h5, h6,p{
+    font-family: "fuente basckerville";
+}
+
+span{
+font-size: x-large;  
+}
+
+.circular-progress{
+    position: relative;
+    height: 8vh;
+    width: 8w;
+    border-radius: 50%;
+    background: conic-gradient(rgba(255, 255, 255, 0.973) 3.6deg, rgb(102, 28, 28) 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 6vh;
+    width: 6vw;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+.progress-value{
+    position: relative;
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+}
+.habilidades{
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+}
+
+.progress-40 {
+    background-image: -webkit-linear-gradient(0deg, #f0f0f0 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), -webkit-linear-gradient(216deg, #38b16b 50%, #f0f0f0 50%, #f0f0f0);
+    background-image: linear-gradient(90deg, #f0f0f0 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(234deg, #38b16b 50%, #f0f0f0 50%, #f0f0f0);
+  }
+  .progress{
+    max-width:1000px;
+    margin: 40px auto;
+  }
+  
+  

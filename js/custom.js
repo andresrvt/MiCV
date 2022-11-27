@@ -28,18 +28,41 @@ let progress = setInterval(()=>{
     }
 }, speed);
 
-window.onload = function (){
-    let bar = document.querySelector('.bar');
-    bar.forEach((progress) =>{
-        let value = progress.getAttribute('data-value');
-        progress.style = `width: ${value}%`;
-        let count = 0;
-        let progressAnimation = setInterval(()=>{
-            count++;
-            progress.getAttribute('data-text',`${count}%`);
-            if(count<=value){
-                clearInterval(progressAnimation);
-            }
-        },15);
+function runFillAnimation() {
+    const elements = document.querySelectorAll(
+      ".progress-bar-meter-fill.fill-animation"
+    );
+    elements.forEach((e) => {
+      e.classList.remove("fill-animation");
+      window.requestAnimationFrame(() => e.classList.add("fill-animation"));
     });
-};
+  }
+  
+  function handleProgressBarWidthAndHeightOnMediaQuery(event) {
+    const elements = document.querySelectorAll(".progress-bar-meter-size");
+    // if matches, it's a big screen
+    if (event.matches) {
+      elements.forEach((element) => {
+        const height = element.getAttribute("data-percent");
+        element.style.height = height;
+        element.style.width = "100%";
+      });
+    } else {
+      elements.forEach((element) => {
+        const width = element.getAttribute("data-percent");
+        element.style.width = width;
+        element.style.height = "100%";
+      });
+    }
+  }
+  
+  const lgMediaQuery = window.matchMedia("screen and (min-width: 992px)");
+  
+  lgMediaQuery.addListener(handleProgressBarWidthAndHeightOnMediaQuery);
+  
+  handleProgressBarWidthAndHeightOnMediaQuery(lgMediaQuery);
+  
+  document.getElementById("animate-again-btn").addEventListener("click", (e) => {
+    runFillAnimation();
+  });
+  

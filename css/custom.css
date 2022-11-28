@@ -13,7 +13,7 @@ li{
 }
 
 .fondo1{
-    background-image: url("/img/fondofi4.png");
+    background-image: url(img/fondofi4.png);
     background-attachment:fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -302,4 +302,9 @@ svg {
 }
 .margen{
   margin-top: 15%;
+}
+@media (max-width: 768px) {
+  .progress-bar{
+    height: 100%;
+  }
 }

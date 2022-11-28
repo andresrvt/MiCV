@@ -55,6 +55,7 @@ function runFillAnimation() {
       });
     }
   }
+
   const lgMediaQuery = window.matchMedia("screen and (min-width: 992px)");
   
   lgMediaQuery.addListener(handleProgressBarWidthAndHeightOnMediaQuery);
@@ -65,4 +66,19 @@ function runFillAnimation() {
     runFillAnimation();
   });
 
+
+  let userInput = document.getElementById("user");
+
+  userInput.addEventListener("focus", function(ev) {
+    console.log("user.focus");
+  });
   
+  userInput.addEventListener("blur", function(ev) {
+    console.log("user.blur");
+    if (userInput.value == "") {
+      console.log("user.refocus");
+      setTimeout(()=>{
+         userInput.focus();
+      },50)
+    }
+  });

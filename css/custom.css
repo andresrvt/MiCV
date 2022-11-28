@@ -13,18 +13,17 @@ li{
 }
 
 .fondo1{
-    background-image: url("/img/fondofi3.png");
+    background-image: url("/img/fondofi4.png");
     background-attachment:fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
 }
 .fondoCodigo {
   background-attachment:fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(/img/fondofi3.png);
+  background-image: url(/img/codigo.png);
   background-size: cover;
 }
 .fondoFormulario {
@@ -36,7 +35,7 @@ li{
   height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6, p, u{
+h1 h2 h3 h4 h5 h6 p u{
     font-family: "fuente basckerville";
     font-weight: bolder;
 }
@@ -44,6 +43,7 @@ h1, h2, h3, h4, h5, h6, p, u{
 span{
 font-size: x-large;
 font-family: "fuente basckerville";  
+font-weight: bolder;
 }
 
 .circular-progress{
@@ -288,15 +288,18 @@ svg {
   text-decoration: none;
   padding: 20px;
   display: inline-block;
-  margin: 30px;
-  margin-top: 25%;
   font-family: arial;
   font-size: 20px;
   transition: font-size  1s;
   border-radius: 15px;
+  margin-left: 30%;
+  margin-top: 15%;
 }
 
 .boton:hover {
   background: rgb(219, 168, 25);
   font-size: 25px;
+}
+.margen{
+  margin-top: 15%;
 }

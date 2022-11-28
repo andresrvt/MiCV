@@ -55,7 +55,6 @@ function runFillAnimation() {
       });
     }
   }
-  
   const lgMediaQuery = window.matchMedia("screen and (min-width: 992px)");
   
   lgMediaQuery.addListener(handleProgressBarWidthAndHeightOnMediaQuery);
@@ -65,4 +64,5 @@ function runFillAnimation() {
   document.getElementById("animate-again-btn").addEventListener("click", (e) => {
     runFillAnimation();
   });
+
   

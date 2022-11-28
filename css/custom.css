@@ -20,26 +20,20 @@ li{
     background-size: cover;
     height: 100vh;
 }
-
-.fondo2{
-    background-image: url("/img/fondoAulas.png");
-    background-attachment:fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 .fondoCodigo {
   background-attachment:fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(/img/codigo.png);
+  background-image: url(/img/fondofi3.png);
   background-size: cover;
 }
-.fondoHabilidades {
+.fondoFormulario {
   background-attachment:fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background:rgb(175, 159, 159);
+  height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6, p, u{
@@ -76,10 +70,6 @@ font-family: "fuente basckerville";
     font-weight: 100;
     color: rgb(0, 0, 0);
 }
-
-
-
-
 
 .progress-bar-group {
   width: 100%;
@@ -289,4 +279,24 @@ svg {
   to {
       transform: rotate(360deg);
     }
+}
+
+button {
+  background: rgb(216, 154, 19);
+  color: #ffffff;
+  font-weight: bolder;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+  margin: 30px;
+  margin-top: 25%;
+  font-family: arial;
+  font-size: 30px;
+  transition: font-size  1s;
+  border-radius: 20px;
+}
+
+button:hover {
+  background: rgb(219, 168, 25);
+  font-size: 30px;
 }

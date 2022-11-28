@@ -281,7 +281,7 @@ svg {
     }
 }
 
-button {
+.boton {
   background: rgb(216, 154, 19);
   color: #ffffff;
   font-weight: bolder;
@@ -291,12 +291,12 @@ button {
   margin: 30px;
   margin-top: 25%;
   font-family: arial;
-  font-size: 30px;
+  font-size: 20px;
   transition: font-size  1s;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
-button:hover {
+.boton:hover {
   background: rgb(219, 168, 25);
-  font-size: 30px;
+  font-size: 25px;
 }

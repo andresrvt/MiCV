@@ -31,13 +31,10 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html"><span>Estudios</span></a>
+                        <a class="nav-link" href="index.html"><span>Inicio</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><span>Experiencia laboral</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/skills.html"><span>Habilidades</span></a>
+                        <a class="nav-link" href="skills.html"><span>Habilidades</span></a>
                     </li>
                 </ul>
                 <div class="row-10 d-flex justify-content-lg-end justify-content-sm-start">
@@ -71,7 +68,7 @@
                     <span class="input-group-text" id="inputGroupPrepend">@</span>
                     <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
                     <div class="invalid-feedback">
-                      Please choose a username.
+                        Por favor selecciona un email válido.
                     </div>
                   </div>
                 </div>
@@ -79,12 +76,14 @@
                   <label for="validationCustom03" class="form-label">Empresa</label>
                   <input type="text" class="form-control" id="validationCustom03" required>
                   <div class="invalid-feedback">
+                    Por favor selecciona una empresa correcta.
                   </div>
                 </div>
                 <div class="col-md-3">
                   <label for="validationCustom04" class="form-label">País</label>
                   <select class="form-select" id="validationCustom04" required>
-                    <option selected disabled value="">España</option>
+                    <option selected disabled value="">País</option>
+                    <option>España</option>
                     <option>Italia</option>
                     <option>Alemania</option>
                     <option>Inglaterra</option>
@@ -92,14 +91,14 @@
                     <option>EEUU</option>
                   </select>
                   <div class="invalid-feedback">
-                    Please select a valid state.
-                  </div>
+                    Por favor selecciona un país correcto.
+                </div>
                 </div>
                 <div class="col-md-3">
                   <label for="validationCustom05" class="form-label">Ciudad</label>
                   <input type="text" class="form-control" id="validationCustom05" required>
                   <div class="invalid-feedback">
-                    Please provide a valid zip.
+                    Por favor selecciona una ciudad correcta.
                   </div>
                 </div>
                 <div class="col-12">
@@ -109,16 +108,35 @@
                       Estoy de acuerdo con enviar mis datos a esta persona.
                     </label>
                     <div class="invalid-feedback">
-                      You must agree before submitting.
+                      Debes estar de acuerdo.
                     </div>
                   </div>
                 </div>
                 <div class="col-12 btn">
-                  <button class="btn-primary" type="submit">Enviar</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Enviar datos
+                    </button>
+                    
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Datos introducidos correctamente
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Vale</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
               </form>
         </div>
     </div>
-
 </body>
 </html>

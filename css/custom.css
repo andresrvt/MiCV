@@ -13,7 +13,7 @@ li{
 }
 
 .fondo1{
-    background-image: url(img/fondofi4.png);
+    background-image: url("img/fondofi4.png");
     background-attachment:fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@ li{
   background-attachment:fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(/img/codigo.png);
+  background-image: url("img/codigo.png");
   background-size: cover;
 }
 .fondoFormulario {

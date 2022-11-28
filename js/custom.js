@@ -65,20 +65,3 @@ function runFillAnimation() {
   document.getElementById("animate-again-btn").addEventListener("click", (e) => {
     runFillAnimation();
   });
-
-
-  let userInput = document.getElementById("user");
-
-  userInput.addEventListener("focus", function(ev) {
-    console.log("user.focus");
-  });
-  
-  userInput.addEventListener("blur", function(ev) {
-    console.log("user.blur");
-    if (userInput.value == "") {
-      console.log("user.refocus");
-      setTimeout(()=>{
-         userInput.focus();
-      },50)
-    }
-  });
